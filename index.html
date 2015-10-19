@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ちょうかんたん「ぎっと」くらいあんと</title>
+<style>
+	body{
+		font-family: "ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN";
+		background: #FFFFCC;
+	}
+	button{
+		border-radius: 100px;
+		font-size: 2rem;
+		background: blue;
+		color: white;
+	}
+	.strong{
+		background: yellow;
+	}
+</style>
+</head>
+<body>
+	<main>
+		<div>
+			<button v-on="click: status">コミット</button>
+			<span class="strong">←コードが完成したらここを押す！マスターにはpushしないで！</span>
+		</div>
+		<div>
+			<button v-on="click: status">状況確認</button>
+		</div>
+		
+		<pre v-text="message">
+			
+		</pre>
+		
+		<div>
+			<button v-on="click: status">全部追加</button>
+			<button v-on="click: status">変更点を送る</button>
+			<button v-on="click: status">他の人の書いたコードを統合</button>
+		</div>
+		
+	</main>
+	
+	<script src="./client/index.js"></script>
+</body>
+</html>
