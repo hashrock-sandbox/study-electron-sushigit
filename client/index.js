@@ -10,7 +10,13 @@ new Vue({
 	methods: {
 		status: function(){
 			var self = this;
-			git(function(res){
+			git.status(function(res){
+				self.message = res;
+			});
+		},
+		add_all: function(){
+			var self = this;
+			git.add_all(function(res){
 				self.message = res;
 			});
 		}
